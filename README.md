@@ -77,7 +77,7 @@ async function getSecret(secretName) {
 | ❌ Manual rotation required | ✅ Automatic rotation |
 | ❌ Risk of credential theft | ✅ Token-based access |
 
-## 💼 Resume Talking Points
+## 💼 Talking Points
 
 - Eliminated 100% of hardcoded secrets using Azure Managed Identity
 - Implemented zero-trust architecture reducing security incidents by 80%
