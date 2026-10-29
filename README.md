@@ -1,4 +1,52 @@
-# Azure Secretless Application with Managed Identity
+<a id="azure-secretless-application-with-managed-identity"></a>
+<a href="#setup-guide">
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
+  <img src="docs/assets/readme/header.png" width="1440" alt="Azure Secretless App. An Azure reference architecture for application access to Key Vault through Managed Identity, with Bicep source and an application example.">
+</picture>
+</a>
+
+<p>
+  <a href="#setup-guide"><strong>Start here ↗</strong></a> &nbsp; / &nbsp;
+  <a href="bicep/main.bicep">Source</a> &nbsp; / &nbsp;
+  <a href="#project-guide">Project guide</a> &nbsp; / &nbsp;
+  <a href="https://github.com/jmragsdale">Profile</a>
+</p>
+
+An Azure reference architecture for application access to Key Vault through Managed Identity, with Bicep source and an application example.
+
+## Explore the project
+
+Open a card for the implementation, examples or supporting documentation.
+
+<p>
+<a href="secretless-architecture.svg">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/architecture-dark.png">
+  <img src="docs/assets/readme/architecture-light.png" width="360" alt="Follow the identity flow. Inspect the application, identity and Key Vault architecture.">
+</picture>
+</a>
+<a href="bicep/main.bicep">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/source-dark.png">
+  <img src="docs/assets/readme/source-light.png" width="360" alt="Read the Bicep source. Inspect the infrastructure resources and identity configuration.">
+</picture>
+</a>
+<a href="#setup-guide">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/setup-dark.png">
+  <img src="docs/assets/readme/setup-light.png" width="360" alt="Review the setup guide. Read the deployment commands and adapt them to your environment.">
+</picture>
+</a>
+<a href="#application-example">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/application-dark.png">
+  <img src="docs/assets/readme/application-light.png" width="360" alt="Inspect the client example. Review credential selection and the Key Vault client interaction.">
+</picture>
+</a>
+</p>
+
+## Project guide
 
 Zero-trust application architecture on Azure using Managed Identity and Key Vault integration, eliminating hardcoded credentials for enhanced security.
 
@@ -16,6 +64,9 @@ This project demonstrates how to build truly secretless applications on Azure by
 - 🔄 **Automatic Secret Rotation** - No application changes needed
 
 ## 🏗️ Architecture
+
+<details>
+<summary>Architecture flow (text)</summary>
 
 ```
 ┌──────────────────┐
@@ -36,6 +87,10 @@ This project demonstrates how to build truly secretless applications on Azure by
                       └──────────────────────────┘
 ```
 
+</details>
+
+<a id="setup-guide"></a>
+
 ## 🚀 Quick Start
 
 ```bash
@@ -48,6 +103,8 @@ az deployment group create \
   --template-file main.bicep \
   --parameters parameters.json
 ```
+
+<a id="application-example"></a>
 
 ## 💻 Application Code Example
 
@@ -91,3 +148,10 @@ async function getSecret(secretName) {
 ---
 
 ⭐ **Implementing secretless applications?** Star this repo!
+
+<details>
+<summary>README visual assets</summary>
+
+[Artwork sources and regeneration notes](docs/assets/readme/README.md).
+
+</details>

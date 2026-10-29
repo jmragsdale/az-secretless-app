@@ -1,0 +1,77 @@
+{
+  "title": "Azure Secretless App",
+  "titleFontSize": 84,
+  "mobileTitle": [
+    "Azure",
+    "secretless app"
+  ],
+  "eyebrow": "IDENTITY ARCHITECTURE",
+  "tagline": "Application identity without embedded keys.",
+  "mobileTagline": [
+    "Application identity.",
+    "No embedded keys."
+  ],
+  "description": [
+    "A reference application using Managed Identity.",
+    "Key Vault integration and Bicep infrastructure."
+  ],
+  "mobileDescription": [
+    "Managed Identity and Key Vault integration.",
+    "A reference application with Bicep source."
+  ],
+  "footerLeft": "BICEP",
+  "footerMiddle": "AZURE / MANAGED IDENTITY",
+  "footerRight": "APPLICATION / IDENTITY / KEY VAULT",
+  "diagram": [
+    "APP",
+    "IDENTITY",
+    "VAULT"
+  ],
+  "summary": "An Azure reference architecture for application access to Key Vault through Managed Identity, with Bicep source and an application example.",
+  "cards": [
+    {
+      "slug": "architecture",
+      "category": "ARCHITECTURE",
+      "title": "Follow the identity flow",
+      "lines": [
+        "Inspect the application, identity",
+        "and Key Vault architecture."
+      ],
+      "footer": "AZURE / IDENTITY FLOW",
+      "href": "secretless-architecture.svg"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Read the Bicep source",
+      "lines": [
+        "Inspect the infrastructure resources",
+        "and identity configuration."
+      ],
+      "footer": "BICEP / REFERENCE CODE",
+      "href": "bicep/main.bicep"
+    },
+    {
+      "slug": "setup",
+      "category": "GET STARTED",
+      "title": "Review the setup guide",
+      "lines": [
+        "Read the deployment commands",
+        "and adapt them to your environment."
+      ],
+      "footer": "AZURE CLI / SETUP NOTES",
+      "href": "#setup-guide"
+    },
+    {
+      "slug": "application",
+      "category": "APPLICATION EXAMPLE",
+      "title": "Inspect the client example",
+      "lines": [
+        "Review credential selection and",
+        "the Key Vault client interaction."
+      ],
+      "footer": "NODE.JS / APPLICATION PATTERN",
+      "href": "#application-example"
+    }
+  ]
+}
