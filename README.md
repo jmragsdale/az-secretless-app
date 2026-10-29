@@ -1,4 +1,5 @@
 <a id="azure-secretless-application-with-managed-identity"></a>
+
 <a href="#setup-guide">
 <picture>
   <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
